@@ -1,6 +1,11 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
+function inverso() {
+  var num = document.getElementById("n1");
+  num.value = Math.pow(num.value, -1);
+}
+
 function cuadrado() {
   var num = document.getElementById("n1");
   num.value = Math.pow(num.value, 2);
@@ -29,8 +34,9 @@ function cuarta() {
 Number:
 <input type="text" id="n1">
 <p>
+
+	<button onclick="inverso()"> 1/x </button>
 	<button onclick="cuadrado()"> x^2 </button>
-	<button onclick="cube()"> x^3 </button>
   	<button onclick="cube()"> x^3 </button>
     <button onclick="cuarta()"> x^4 </button>
     <button onclick="seno()"> sin(x) </button>
